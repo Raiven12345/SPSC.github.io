@@ -334,7 +334,7 @@ const init = () => {
   resizeWindow();
   on();
 
-  renderer.setClearColor(0xeeeeee, 0.0);
+  renderer.setClearColor(0x000000, 1.0);
   camera.position.set(250, 500, 1000);
   camera.lookAt(new THREE.Vector3());
 
