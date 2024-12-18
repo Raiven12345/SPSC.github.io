@@ -239,6 +239,20 @@ const resolution = {
 };
 
 const canvas = document.getElementById('canvas-webgl');
+canvas.addEventListener('touchstart', (event) => {
+ // Handle touch start logic
+ console.log('Touch start', event.touches[0]);
+});
+
+canvas.addEventListener('touchmove', (event) => {
+ // Handle touch move logic
+ console.log('Touch move', event.touches[0]);
+});
+
+canvas.addEventListener('touchend', (event) => {
+ // Handle touch end logic
+ console.log('Touch end');
+});
 const renderer = new THREE.WebGLRenderer({
   antialias: false,
   canvas: canvas,
