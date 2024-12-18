@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Butterfly</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Three.js Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Overlaid on Canvas -->
+    <div class="container text-center text-white">
+        <h1>Welcome to SPSC</h1>
+        <p>SPSC is a global dance music platform and community.</p>
+        <p>Become a member for free to get early access to tickets, our newsletter full of music recs, plus some more perks...</p>
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">BECOME A MEMBER</a></li>
+            <li><a href="#" class="text-white text-decoration-none">BROWSE UPCOMING EVENTS</a></li>
+            <li><a href="#" class="text-white text-decoration-none">SHOP KEEP HUSH MERCH</a></li>
+            <li><a href="#" class="text-white text-decoration-none">WATCH / LISTEN</a></li>
+            <li><a href="#" class="text-white text-decoration-none">ABOUT</a></li>
+        </ul>
+        <hr>
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">partner with us</a></li>
+            <li><a href="#" class="text-white text-decoration-none">privacy & terms</a></li>
+            <li><a href="#" class="text-white text-decoration-none">safe(r) space policy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">contact us</a></li>
+            <li><a href="#" class="text-white text-decoration-none">support</a></li>
+        </ul>
+    </div>
+
+    <!-- WebGL Canvas -->
+    <canvas id="canvas-webgl"></canvas>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>

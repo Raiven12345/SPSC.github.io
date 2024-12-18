@@ -1,0 +1,29 @@
+/* Ensure body and html take the full height */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Full-screen WebGL Canvas */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Below the text content */
+}
+
+/* Overlay content on top of the canvas */
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+
+/* White text for better contrast */
+.text-white {
+  color: white;
+}
