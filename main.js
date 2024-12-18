@@ -309,14 +309,23 @@ const on = () => {
 }
 
 const CAMERA_X_RANGE = { min: -250, max: 250 };
-document.addEventListener('mousemove', (event) => {
-  const normalizedX = (event.clientX / window.innerWidth) * 2 - 1; // Normalize to [-1, 1]
-  
+function handleMovement(x) {
+  const normalizedX = (x / window.innerWidth) * 2 - 1; // Normalize to [-1, 1]
   const mappedX = lerp(CAMERA_X_RANGE.min, CAMERA_X_RANGE.max, (normalizedX + 1) / 2);
-
-  
-  camera.position.set(mappedX, 500, 1000); 
+  camera.position.set(mappedX, 500, 1000);
   camera.lookAt(new THREE.Vector3());
+}
+
+// Mouse move event
+document.addEventListener('mousemove', (event) => {
+  handleMovement(event.clientX);
+});
+
+// Touch move event
+document.addEventListener('touchmove', (event) => {
+  if (event.touches.length > 0) {
+    handleMovement(event.touches[0].clientX);
+  }
 });
 
 
